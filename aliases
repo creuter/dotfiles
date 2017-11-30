@@ -7,6 +7,11 @@ alias v="$VISUAL"
 
 # Bundler
 alias b="bundle"
+alias be="bundle exec"
+
+# Git
+alias gacm="git add . && git commit -m"
+alias gaca="git add . && git commit --amend --no-edit"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
