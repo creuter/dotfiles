@@ -150,6 +150,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" Quicker saving
+nnoremap <leader>w :w<cr>
+inoremap <leader>w <C-c>:w<cr>
+
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
