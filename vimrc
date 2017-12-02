@@ -154,6 +154,9 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>w :w<cr>
 inoremap <leader>w <C-c>:w<cr>
 
+" Quicker reloading
+nnoremap <leader>ge :windo e!<cr>
+
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
@@ -173,5 +176,5 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-" Shorten the escaping
+" Alternate escape
 inoremap jj <Esc>
