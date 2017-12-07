@@ -46,3 +46,6 @@ _load_settings "$HOME/.zsh/configs"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# add qt to path
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
