@@ -177,3 +177,6 @@ endif
 
 " Alternate escape
 inoremap jj <Esc>
+
+" Nerdtree
+map <C-e> :NERDTreeToggle<CR>
