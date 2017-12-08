@@ -49,3 +49,9 @@ _load_settings "$HOME/.zsh/configs"
 
 # add qt to path
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+
+# FZF
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
