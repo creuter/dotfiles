@@ -172,3 +172,6 @@ map <C-e> :NERDTreeToggle<CR>
 
 " FZF
 map <C-p> :FZF<CR>
+
+" tComment
+map <leader>c <c-_><c-_>
