@@ -12,6 +12,7 @@ alias be="bundle exec"
 # Git
 alias gacm="git add . && git commit -m"
 alias gaca="git add . && git commit --amend --no-edit"
+alias undeployed="git fetch --multiple production origin && git log production/master..origin/master"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"

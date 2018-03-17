@@ -175,3 +175,9 @@ map <C-p> :FZF<CR>
 
 " tComment
 map <leader>c <c-_><c-_>
+
+" toggle nowrap
+nnoremap <leader>nw :set nowrap!<cr>
+
+" toggle paste
+nnoremap <leader>p :set paste!<cr>
