@@ -1,3 +1,9 @@
+Clear the path
+if [ -f /etc/profile ]; then
+  PATH=""
+  source /etc/profile
+fi
+
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
@@ -60,3 +66,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 bindkey -v
 bindkey “^F” vi-cmd-mode
 bindkey jj vi-cmd-mode
+
+# load ASDF, falling back to rbenv if not available
+if [ -d "$HOME/.asdf" ]; then
+  . $HOME/.asdf/asdf.sh
+fi
