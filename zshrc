@@ -56,6 +56,9 @@ _load_settings "$HOME/.zsh/configs"
 # add qt to path
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 
+# todo: clean this up to fix npm paths
+export PATH=~/.asdf/installs/nodejs/9.2.0/.npm/bin:$PATH
+
 # FZF
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
